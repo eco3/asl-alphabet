@@ -1,0 +1,7 @@
+/**
+ * @license
+ * Copyright 1991 David Rakowski. All Rights Reserved.
+ *
+ * https://www.lifeprint.com/asl101/pages-layout/gallaudettruetypefont.htm
+ * =============================================================================
+ */
