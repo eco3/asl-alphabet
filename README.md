@@ -31,7 +31,9 @@ The second dataset contains video files of the letters J and Z, because these si
 To extract the landmarks, the solution [MediaPipe Hands](https://google.github.io/mediapipe/solutions/hands) is used.
 Passing an image to MediaPipe it results a list of hand landmarks.  
 
-<img title="21 hand landmarks" alt="21 hand landmarks" src="docs/hand_landmarks.png">
+<a href="https://google.github.io/mediapipe/solutions/hands#hand-landmark-model">
+    <img title="21 hand landmarks" alt="21 hand landmarks" src="docs/hand_landmarks.png">
+</a>
 
 The figure above shows the resulting hand landmarks [(MediaPipe Hands)](https://google.github.io/mediapipe/solutions/hands#hand-landmark-model).
 
@@ -39,11 +41,25 @@ This project includes two script to extract landmarks from either image- or vide
 You can set the number of workers, to accelerate the extraction.
 Every worker processes one letter in the dataset and yields a CSV file.
 
+If the extraction encounters an image or video with a left hand, it mirrors the x-axis of the landmarks, so it behaves like a right hand.
+
 These resulting 26 files (A.csv, B.csv, ..., Z.csv) then can be merged into one single CSV file and used for training a model.
 
 ## Training
+This project includes Jupyter Notebooks to train two different models.
+Both notebooks take the same extracted dataset CSV file.
+
+* [train_catboost.ipynb](train/train_catboost.ipynb) trains a CatBoostClassifier.
+* [train_neuralnetwork.ipynb](train/train_neuralnetwork.ipynb) trains a Multilayer perceptron using TensorFlow 2.
+
+The CatBoostClassifier converges quickly and yields great accuracy.
+However, while developing this project, there was this idea to include a model into a single webpage,
+ideally with no Python backend. So I decided to train a Multilayer perceptron with TensorFlow. The trained
+model then can be converted for the [TensorFlow.js](https://www.tensorflow.org/js) library and included directly in 
+JavaScript without the need of a Python backend server.
 
 ## Local inference
+You can run your trained models by either running [run_asl_catboost.py](run_asl_catboost.py) or [run_asl_neuralnetwork.py](run_asl_neuralnetwork.py).
 
 ## Web Demo
 ### Dependencies
