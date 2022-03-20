@@ -1,7 +1,7 @@
-# Learn the American Manual Alphabet (AMA) 
-
+# Learn the American Manual Alphabet (AMA)
 ## Introduction
- 
+//TODO 
+
 ## Requirements
 This project was done using Python 3.8. The following packages were used:
 
@@ -62,5 +62,17 @@ JavaScript without the need of a Python backend server.
 You can run your trained models by either running [run_asl_catboost.py](run_asl_catboost.py) or [run_asl_neuralnetwork.py](run_asl_neuralnetwork.py).
 
 ## Web Demo
+//TODO
+
 ### Dependencies
-### Build
+The following dependencies are used for the web demo:
+
+* [@mediapipe/camera_utils](https://www.npmjs.com/package/@mediapipe/camera_utils)
+* [@mediapipe/drawing_utils](https://www.npmjs.com/package/@mediapipe/drawing_utils)
+* [@mediapipe/hands](https://www.npmjs.com/package/@mediapipe/hands)
+* [@tensorflow/tfjs](https://www.npmjs.com/package/@tensorflow/tfjs)
+* [splitting](https://www.npmjs.com/package/splitting)
+* [Bootstrap](https://getbootstrap.com/) - as CDN
+* [Gallaudet TrueType](https://www.lifeprint.com/asl101/pages-layout/gallaudettruetypefont.htm) - a beautiful font displaying the letter signs 
+
+The modules are compiled using [webpack.js.](https://webpack.js.org/), the source files can be found [here](https://github.com/eco3/asl-alphabet/tree/demo/demo).
