@@ -1,3 +1,13 @@
+*.zip
+*.csv
+
+extract_data/data_images
+extract_data/data_videos
+extract_data/extracted_data
+
+train/logs
+train/models
+
 .idea
 .python-version
 
