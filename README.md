@@ -62,7 +62,10 @@ JavaScript without the need of a Python backend server.
 You can run your trained models by either running [run_asl_catboost.py](run_asl_catboost.py) or [run_asl_neuralnetwork.py](run_asl_neuralnetwork.py).
 
 ## Web Demo
-//TODO
+To demonstrate and play with the trained model you can head to [this repositories GitHub Page](https://eco3.github.io/asl-alphabet/).
+
+It loads the trained model, and uses [the JavaScript capabilities of MediaPipe](https://google.github.io/mediapipe/solutions/hands#javascript-solution-api).
+The extracted landmarks from your webcam get passed to the Multilayer perceptron and the prediction is displayed on the screen.
 
 ### Dependencies
 The following dependencies are used for the web demo:
