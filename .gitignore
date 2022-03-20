@@ -1,6 +1,9 @@
 *.zip
 *.csv
 
+demo/node_modules
+demo/package-lock.json
+
 extract_data/data_images
 extract_data/data_videos
 extract_data/extracted_data
