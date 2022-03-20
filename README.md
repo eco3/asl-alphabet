@@ -1,6 +1,8 @@
 # Learn the American Manual Alphabet (AMA)
 ## Introduction
-//TODO 
+This repository contains scripts to identify the letters of the [American Manual Alphabet (AMA)](https://en.wikipedia.org/wiki/American_manual_alphabet).
+
+You can either train & run it locally or head directly to [this repositories GitHub Page](https://eco3.github.io/asl-alphabet/) to see a demonstration using your webcam.
 
 ## Requirements
 This project was done using Python 3.8. The following packages were used:
