@@ -67,7 +67,7 @@ function onResults(results) {
 
             if (letter === currentWord[spellingProgress.length].toUpperCase()) {
                 // Mark the correctly spelled letter red.
-                wordChars.chars[spellingProgress.length].setAttribute("class", "text-danger");
+                wordChars.chars[spellingProgress.length].classList.add("text-danger");
                 spellingProgress += letter;
 
                 // If the word is fully spelled, get a new random word.
