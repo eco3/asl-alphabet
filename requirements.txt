@@ -1,0 +1,15 @@
+alive-progress==2.3.1
+catboost==1.0.4
+ipython
+ipywidgets
+joblib==1.1.0
+jupyterlab
+mediapipe==0.8.9.1
+numpy==1.22.2
+opencv-contrib-python==4.5.3.56
+opencv-python==4.5.3.56
+pandas==1.4.0
+scikit-learn==1.0.2
+tensorboard==2.8.0
+tensorflow==2.8.0
+tensorflowjs==3.14.0
