@@ -6,6 +6,7 @@ extract_data/data_videos
 extract_data/extracted_data
 
 train/logs
+train/catboost_info
 train/models
 
 .idea
